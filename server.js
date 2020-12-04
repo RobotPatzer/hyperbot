@@ -582,7 +582,7 @@ function playGame(gameId){
 				playingGameId = gameId
 				
 				setTimeout(_=>lichessUtils.gameChat(gameId, "all", welcomeMessage), 2 * SECOND)
-				setTimeout(_=>lichessUtils.gameChat(gameId, "all", goodLuckMessage), 4 * SECOND)
+				
 				
 				engine.spawn()
 				
@@ -808,7 +808,6 @@ function streamEvents(){
                 engine.stop()
             }
 			
-			setTimeout(_=>lichessUtils.gameChat(gameId, "all", goodGameMessage), 2 * SECOND)
         }         
     }})
 }
