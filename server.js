@@ -118,10 +118,6 @@ const usePolyglot = isEnvTrue('USE_POLYGLOT')
 envKeys.push('USE_POLYGLOT')
 const welcomeMessage = process.env.WELCOME_MESSAGE || `coded by @hyperchessbotauthor`
 envKeys.push('WELCOME_MESSAGE')
-const goodLuckMessage = process.env.GOOD_LUCK_MESSAGE || `Good luck !`
-envKeys.push('GOOD_LUCK_MESSAGE')
-const goodGameMessage = process.env.GOOD_GAME_MESSAGE || `Good game !`
-envKeys.push('GOOD_GAME_MESSAGE')
 let disableSyzygy = isEnvTrue('DISABLE_SYZYGY')
 envKeys.push('DISABLE_SYZYGY')
 const filterThresoldPlays = parseInt(process.env.FILTER_THRESOLD_PLAYS, "10")
